@@ -1,4 +1,4 @@
-# Problem 007:
+# Problem 7:
 #     10,001st Prime
 #
 # Description:
