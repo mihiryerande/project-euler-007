@@ -7,7 +7,7 @@
 #
 #     What is the 10,001st prime number?
 
-def main(n):
+def main(n: int) -> int:
     """
     Return the `n`th consecutive prime number.
 
@@ -15,7 +15,7 @@ def main(n):
         n (int): Natural number
 
     Returns:
-        `n`th prime number
+        (int): `n`th prime number
 
     Raises:
         AssertError: if incorrect params are given
@@ -34,7 +34,7 @@ def main(n):
             else:
                 continue
         if is_prime:
-            # x not divisible by any primes found so far
+            # `x` not divisible by any primes found so far
             primes.append(x)
         else:
             continue
@@ -44,4 +44,5 @@ def main(n):
 if __name__ == '__main__':
     num = int(input('Enter a natural number: '))
     prime = main(num)
-    print('Prime #{}:\n{}'.format(num, prime))
+    print('Prime #{}:'.format(num))
+    print('  {}'.format(prime))
